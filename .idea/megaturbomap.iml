@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/apps/backend/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/backend/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/frontent/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/frontent/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/logger/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/logger/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ui/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ui/dist" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

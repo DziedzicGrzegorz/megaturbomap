@@ -1,0 +1,32 @@
+{
+  "name": "logger",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "if exist node_modules rmdir/s/q node_modules .turbo && if exist dist rmdir/s/q dist && if exist .turbo rmdir/s/q .turbo",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "test": "jest",
+    "pnpmI": "pnpm i"
+  },
+  "jest": {
+    "preset": "jest-presets/jest/node"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^18.11.9",
+    "eslint": "^7.32.0",
+    "eslint-config-custom-server": "workspace:*",
+    "jest": "^26.6.3",
+    "jest-presets": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3"
+  }
+}

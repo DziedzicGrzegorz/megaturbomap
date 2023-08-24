@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "clean": "if exist node_modules rmdir/s/q node_modules .turbo && if exist dist rmdir/s/q dist && if exist .turbo rmdir/s/q .turbo",
+    "deploy": "vercel deploy dist --team=turborepo --confirm",
+    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0"
+  }
+}
