@@ -15,5 +15,6 @@
     "src"
   ],
   "module": "commonjs",
-  "esModuleInterop": true
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
 }
