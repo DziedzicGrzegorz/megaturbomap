@@ -11,3 +11,4 @@ dist-ssr
 !/.env
 /.env
 !/pnpm-lock.yaml
+.idea

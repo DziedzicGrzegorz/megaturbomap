@@ -4,6 +4,7 @@ import morgan from "morgan";
 import cors from "cors";
 import 'express-async-errors'
 import {handleError, ValidationError} from "./utils/erros";
+//import {pool} from "./utils/db";
 
 export function createServer(): Application {
     const app = express();
