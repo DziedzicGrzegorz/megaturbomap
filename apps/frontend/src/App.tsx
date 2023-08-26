@@ -1,13 +1,7 @@
 import React from "react";
-import {Header} from "./layout/Header";
-import './app.css'
-
+import {Main} from "./pages/main/Main";
 export function App() {
     return (
-        <>
-            <Header/>
-            <div className="map">
-            </div>
-        </>
-    );
+            <Main/>
+    )
 }
