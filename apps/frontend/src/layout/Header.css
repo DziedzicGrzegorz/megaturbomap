@@ -1,0 +1,34 @@
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 1rem;
+    font-weight: normal;
+}
+button{
+    border: 0;
+    background: #2A913E;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1px 35px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 0.2em;
+}
+.search input{
+    width: 13em;
+    margin-right: 5px;
+    flex-grow: 1;
+}
