@@ -25,6 +25,9 @@ export function createServer(): Application {
         .get("/error",async () => {
             throw new ValidationError("test Error");
         })
+        .get("/InternalError",async () => {
+            throw new Error("Internal Error");
+        })
         .use(handleError)
 
 return app;
