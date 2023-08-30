@@ -6,7 +6,7 @@ export const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'megaMaps',
-    password: process.env.DB_PASSWORD,
+    password: "Pluto32107",
     port: 5432,
 })
 

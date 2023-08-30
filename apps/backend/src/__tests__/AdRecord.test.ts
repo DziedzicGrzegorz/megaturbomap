@@ -76,4 +76,5 @@ describe('AdRecord', () => {
         const invalidAdRecord = { ...validAdRecord, url: 'a'.repeat(1001) };
         expect(() => new AdRecord(invalidAdRecord)).toThrow(ValidationError);
     });
+    
 });

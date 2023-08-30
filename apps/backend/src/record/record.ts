@@ -1,7 +1,8 @@
 import {AdEntity} from "types/dist/AdRecord/Adrecord";
 import {Optional} from "types";
 import {ValidationError} from "../utils/erros";
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
+import {pool} from "../utils/db";
 
 type NewAdEntity = Optional<AdEntity, 'id'>;
 
@@ -37,4 +38,15 @@ export class AdRecord implements AdEntity{
         this.lng = obj.lng;
     }
 
+    static async getAdById(id: string) {
+        const query = {
+            text: 'SELECT * FROM advertisements WHERE uuid = $1',
+            values: [id],
+        };
+
+        const { rows } = await pool.query(query) as {rows: AdEntity[]};
+
+        return  rows.length === 0 ? null : new AdRecord(rows[0])
+
+    }
 }

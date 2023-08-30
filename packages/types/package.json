@@ -6,7 +6,7 @@
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsup src/index.ts --format cjs --watch",
+    "dev": "tsup src/index.ts --format cjs ",
     "watch": "tsup src --format cjs --watch",
     "tscW": "tsc -w"
   },
