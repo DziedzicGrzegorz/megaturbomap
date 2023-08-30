@@ -1,7 +1,11 @@
-import {createContext} from "react";
+import React from 'react';
 
-export const SearchContext = createContext({
+type SearchContextType = {
+    search: string;
+    setSearch: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export const SearchContext = React.createContext<SearchContextType>({
     search: "",
-    setSearch: (search: string) => {},
-
-})
+    setSearch: () => {},
+});
