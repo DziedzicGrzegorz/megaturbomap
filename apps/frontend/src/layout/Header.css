@@ -3,7 +3,7 @@ header{
     color: #fff;
     padding: 12px;
     text-align: center;
-    font-size: 15px;
+    font-size: 1px;
     font-weight: 200;
     display: flex;
     justify-content: space-between;
@@ -20,15 +20,21 @@ button{
     font-weight: 500;
     padding: 1px 35px;
     border-radius: 3px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .search{
     display: flex;
-    justify-content: center;
     padding: 0.2em;
+    align-items: stretch;
 }
 .search input{
     width: 13em;
     margin-right: 5px;
     flex-grow: 1;
+    /*height: 2.5em;*/
 }
+form{
+    display: flex;
+    justify-content: center;
+}
+

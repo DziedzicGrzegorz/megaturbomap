@@ -1,8 +1,12 @@
 .map{
-    background: rgb(25, 35, 94);
+    background: rgb(56, 141, 7);
     height: calc(100vh - 68px);
 }
 .leaflet-container {
     height: 100%;
     width: 100%;
+}
+
+h1{
+    font-size: 0.7rem;
 }
