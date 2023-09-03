@@ -5,6 +5,10 @@ export interface AdEntity{
     price:number;
     url:string;
     lat:number;
-    lng:number;
+    lon:number;
 
 }
+export type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>
+
+export interface SimpleAdEntity extends Pick<AdEntity, 'id' | 'lat' | 'lon' >{}
+

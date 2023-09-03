@@ -5,6 +5,7 @@ import cors from "cors";
 import 'express-async-errors'
 import {handleError, ValidationError} from "./utils/erros";
 import rateLimit from "express-rate-limit";
+import {adRouter} from "./router/adRouter";
 //import {pool} from "./utils/db";
 const limiter = rateLimit({
     windowMs: 5 * 60 * 1000,
@@ -25,6 +26,7 @@ export function createServer(): Application {
             origin: 'http:localhost:3001',
         }))
         .use(limiter)
+        .use('/testowy',adRouter)
         .get("/message/:name", (req, res) => {
             return res.json({message: `hello ${req.params.name}`});
         })
