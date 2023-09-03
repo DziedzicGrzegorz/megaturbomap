@@ -26,7 +26,7 @@ export function createServer(): Application {
             origin: 'http:localhost:3001',
         }))
         .use(limiter)
-        .use('/testowy',adRouter)
+        .use('/ad',adRouter)
         .get("/message/:name", (req, res) => {
             return res.json({message: `hello ${req.params.name}`});
         })
