@@ -38,7 +38,7 @@ export class AdRecord implements NewAdEntity {
 
     static async getAdById(id: string) {
         const query = {
-            text: 'SELECT * FROM advertisements WHERE uuid = $1',
+            text: 'SELECT * FROM advertisements WHERE id = $1',
             values: [id],
         };
 
@@ -65,7 +65,7 @@ export class AdRecord implements NewAdEntity {
             this.id = uuidv4()
         }
         await pool.query(
-            'INSERT INTO advertisements(uuid, name, description, url, price, lat, lon) VALUES($1, $2, $3, $4, $5, $6, $7)',
+            'INSERT INTO advertisements(id, name, description, url, price, lat, lon) VALUES($1, $2, $3, $4, $5, $6, $7)',
             [this.id, this.name, this.description, this.url, this.price, this.lat, this.lon],
         );
     }
