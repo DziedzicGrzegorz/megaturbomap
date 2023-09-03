@@ -21,7 +21,6 @@ export function Map() {
 
     useEffect(() => {
         getSearch();
-
     }, [search]);
 
     return (

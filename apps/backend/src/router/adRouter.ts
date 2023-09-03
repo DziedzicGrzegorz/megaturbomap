@@ -1,4 +1,5 @@
 import {Router} from "express";
+import {AdRecord} from "../record/record";
 
 export const adRouter:Router = Router()
 
