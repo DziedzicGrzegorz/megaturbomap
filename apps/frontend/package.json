@@ -9,13 +9,15 @@
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "devVite": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.14.2"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.3",
