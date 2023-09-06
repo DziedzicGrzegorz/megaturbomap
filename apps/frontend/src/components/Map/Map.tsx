@@ -1,6 +1,7 @@
-import './Map.css'
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
+import './Map.css'
 import 'leaflet/dist/leaflet.css'
+import './iconFix'
 import {SearchContext} from "../../context/SearchContext";
 import {SimpleAdEntity} from "types";
 import {useContext, useEffect, useState} from "react";

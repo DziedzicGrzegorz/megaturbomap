@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import {Header} from "../../layout/Header";
-import {Map} from "../../components/Map/Map";
-import {SearchContext} from "../../context/SearchContext";
+import {Header} from "../layout/Header";
+import { SearchContext } from "../context/SearchContext";
+import {Map} from "../components/Map/Map";
 
-export function Main() {
+export function MainMap() {
     const [search, setSearch] = useState('')
     return (
         <>
@@ -12,5 +12,5 @@ export function Main() {
                 <Map/>
             </SearchContext.Provider>
         </>
-    )
+    );
 }

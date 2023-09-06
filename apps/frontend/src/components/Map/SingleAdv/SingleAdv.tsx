@@ -20,7 +20,7 @@ export function SingleAdv(props: Props) {
     useEffect(() => {
         getAd()
 
-    });
+    },[]);
 
     if (ad === null) {
         console.log('nullable')
@@ -30,7 +30,6 @@ export function SingleAdv(props: Props) {
     return (
         <div className="singleAdv">
 
-            <p>test</p>
             <h2>{ad.name}</h2>
             <p>{ad.description}</p>
             {Boolean(Number(ad.price)) && <p>{ad.price} zł</p>}
