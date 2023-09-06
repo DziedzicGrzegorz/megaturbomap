@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
 import {Btn} from "../../common/Btn/Btn";
 import './AddForm.css'
@@ -142,5 +143,14 @@ export function AddForm() {
             </p>
             <Btn text="Zapisz"/>
         </form>
+=======
+import React from "react";
+
+export function AddForm(){
+    return (
+        <div>
+            <h1>Add Form</h1>
+        </div>
+>>>>>>> c753415 (fix(Backend): vercel.json again2)
     )
 }

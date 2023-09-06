@@ -1,5 +1,5 @@
-import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import './Map.css'
+import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
 import '../../utils/iconFix'
 import {SearchContext} from "../../context/SearchContext";
