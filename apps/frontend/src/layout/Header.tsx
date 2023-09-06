@@ -14,7 +14,7 @@ export function Header() {
             <Btn text={"Dodaj ogłoszenie"}/>
 
             <div className="search">
-                <form onSubmit={(e:SyntheticEvent) => {
+                <form className="headerForm" onSubmit={(e:SyntheticEvent) => {
                     e.preventDefault()
                     setSearch(inputValue)
                 }}>

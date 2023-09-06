@@ -12,16 +12,6 @@ header h1{
     font-size: 1rem;
     font-weight: normal;
 }
-button{
-    border: 0;
-    background: #2A913E;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 1px 35px;
-    border-radius: 3px;
-    font-size: 0.6rem;
-}
 .search{
     display: flex;
     padding: 0.2em;
@@ -33,7 +23,7 @@ button{
     flex-grow: 1;
     /*height: 2.5em;*/
 }
-form{
+.headerForm{
     display: flex;
     justify-content: center;
 }
