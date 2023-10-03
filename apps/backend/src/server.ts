@@ -23,7 +23,7 @@ export function createServer(): Application {
         .use(urlencoded({extended: true}))
         .use(json())
         .use(cors({
-            origin: ['http://localhost:3001', 'http://localhost:4173'],
+            origin: ['*'],
         }))
         .use(limiter)
         .use('/ad',adRouter)
