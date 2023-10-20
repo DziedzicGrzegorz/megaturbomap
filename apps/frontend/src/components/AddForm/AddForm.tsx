@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState} from "react";
 import {Btn} from "../../common/Btn/Btn";
 import './AddForm.css'
@@ -38,7 +37,7 @@ export function AddForm() {
         e.preventDefault()
         setLoading(true)
         try {
-            const {lon,lat} = await geoCode(form.address)
+            const {lon, lat} = await geoCode(form.address)
             const response = await fetch('http://localhost:3000/ad', {
                 method: 'POST',
                 headers: {
@@ -66,7 +65,7 @@ export function AddForm() {
             </p>
         )
     }
-    if(id) {
+    if (id) {
         return (
             <p>
                 Added with id: {id}
@@ -143,14 +142,5 @@ export function AddForm() {
             </p>
             <Btn text="Zapisz"/>
         </form>
-=======
-import React from "react";
-
-export function AddForm(){
-    return (
-        <div>
-            <h1>Add Form</h1>
-        </div>
->>>>>>> c753415 (fix(Backend): vercel.json again2)
     )
 }

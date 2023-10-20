@@ -26,20 +26,20 @@ export function createServer(): Application {
             origin: ['*'],
         }))
         .use(limiter)
-        .use('/ad',adRouter)
+        .use('/ad', adRouter)
         .get("/message/:name", (req, res) => {
             return res.json({message: `hello ${req.params.name}`});
         })
         .get("/healthz", (req, res) => {
             return res.json({ok: true});
         })
-        .get("/error",async () => {
+        .get("/error", async () => {
             throw new ValidationError("test Error");
         })
-        .get("/InternalError",async () => {
+        .get("/InternalError", async () => {
             throw new Error("Internal Error");
         })
         .use(handleError)
 
-return app;
+    return app;
 }

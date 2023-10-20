@@ -33,7 +33,7 @@ export function SingleAdv(props: Props) {
             <h2>{ad.name}</h2>
             <p>{ad.description}</p>
             {Boolean(Number(ad.price)) && <p>{ad.price} zł</p>}
-            <a href={ad.url} target={"_blank"}>
+            <a href={ad.url} target={"_blank"} rel="noreferrer">
                 Open in new tab
             </a>
         </div>
